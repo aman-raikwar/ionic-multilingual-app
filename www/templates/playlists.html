@@ -1,0 +1,29 @@
+<ion-view view-title="eCom">
+    <ion-content>
+        <ion-slides options="options" slider="data.slider">
+            <ion-slide-page>
+                <div class="box box-1"></div>
+            </ion-slide-page>
+            <ion-slide-page>
+                <div class="box box-2"></div>
+            </ion-slide-page>
+            <ion-slide-page>
+                <div class="box box-3"></div>
+            </ion-slide-page>
+            <ion-slide-page>
+                <div class="box box-1"></div>
+            </ion-slide-page>
+        </ion-slides>
+        <div class="list list-inset search-bar">
+            <label class="item item-input" style="padding-left: 5px;padding-right: 15px;">
+                <input type="text" placeholder="{{ 'INPUT_TEXT_SEARCH' | translate }}">
+                <i class="icon ion-search placeholder-icon"></i>
+            </label>
+        </div>
+        <ion-list>
+            <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+                {{playlist.title[lang]}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

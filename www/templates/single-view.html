@@ -1,0 +1,22 @@
+<ion-view view-title="{{ single.title[lang] }}">
+    <ion-content>
+        <h2 class="single-subtitle">{{ single.subtitle }}</h2>
+        <div class="list list-inset other-info">
+            <ion-item ng-click="showSpecificationModal()">
+                {{ "LABEL_SPECIFICATIONS" | translate }}
+            </ion-item>
+            <ion-item ng-click="showManualInstallationPDFModal()">
+                {{ "LABEL_MANUAL_INSTALLATION" | translate }} - PDF
+            </ion-item>
+            <ion-item ng-click="showManualInstallationXLSModal()">
+                {{ "LABEL_MANUAL_INSTALLATION" | translate }} - XLS
+            </ion-item>
+            <ion-item ng-click="showManualInstallationModal()">
+                {{ "LABEL_MANUAL_INSTALLATION" | translate }}
+            </ion-item>
+            <ion-item ng-click="showTechnicalSpecificationModal()">
+                {{ "LABEL_TECHNICAL_SPECIFICATIONS" | translate }}
+            </ion-item>
+        </div>
+    </ion-content>
+</ion-view>

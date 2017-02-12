@@ -1,0 +1,27 @@
+<ion-view view-title="{{ 'MENU_LOGIN' | translate }}">
+    <ion-content>
+        <form>
+            <div class="list list-inset">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">{{ 'INPUT_TEXT_EMAIL' | translate }}</span>
+                    <input type="text" ng-model="loginData.email" placeholder="{{ 'INPUT_TEXT_EMAIL' | translate }}" />
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">{{ 'INPUT_TEXT_PASSWORD' | translate }}</span>
+                    <input type="password" ng-model="loginData.password" placeholder="{{ 'INPUT_TEXT_PASSWORD' | translate }}" />
+                </label>
+                <div class="button-bar">
+                    <button class="button button-assertive button-block" ng-click="login(loginData)" ng-disabled="{{!loginData.isValid}}">
+                        {{ 'MENU_LOGIN' | translate }}
+                    </button>
+                    <button class="button button-assertive button-block button-outline" ui-sref="app.signup">
+                        {{ 'MENU_REGISTER' | translate }}
+                    </button>
+                </div>
+            </div>
+        </form>
+        <button class="button button-block button-outline button-positive" ui-sref="app.forgotpassword">
+            {{ 'MENU_FORGOT_PASSWORD' | translate }}
+        </button>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,63 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-assertive" align-title="center">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear ion-android-more-vertical" ng-click="openPopover($event)"></button>
+                <!-- <button class="button button-icon button-clear ion-android-more-vertical" menu-toggle="right"></button> -->
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-content padding="false" style="top:0px !important;" class="side-menu-left side-menu-gradient">
+            <div class="profile-image">
+                <img ng-src="{{ 'img/company-logo.jpg' }}">
+            </div>
+            <ion-list id="menu-list1">
+                <ion-item class="item-icon-left side-menu-item" ng-repeat="playlist in playlists" ui-sref="app.playlists({id: playlist.id})" menu-close>
+                    <i class="icon ion-ios-arrow-forward"></i> {{playlist.title[lang]}}
+                </ion-item>
+                <ion-item class="item-divider"></ion-item>
+                <ion-item class="item-icon-left side-menu-item" id="menu-list-item-home" ui-sref="app.playlists" menu-close>
+                    <i class="icon ion-ios-home-outline"></i> {{"MENU_HOME" | translate}}
+                </ion-item>
+                <ion-item class="item-icon-left side-menu-item" id="menu-list-item-about" ui-sref="app.about" menu-close>
+                    <i class="icon ion-ios-information-outline"></i> {{"MENU_ABOUT" | translate}}
+                </ion-item>
+                <ion-item class="item-icon-left side-menu-item" ui-sref="app.login" ng-if="!userData" menu-close>
+                    <i class="icon ion-log-in"></i> {{"MENU_LOGIN" | translate}}
+                </ion-item>
+                <ion-item class="item-icon-left side-menu-item" ui-sref="app.signup" ng-if="!userData" menu-close>
+                    <i class="icon ion-person-add"></i> {{"MENU_REGISTER" | translate}}
+                </ion-item>
+                <ion-item class="item-icon-left side-menu-item" ui-sref="app.profile" ng-if="userData" menu-close>
+                    <i class="icon ion-ios-person-outline"></i> My Profile
+                </ion-item>
+                <ion-item class="item-icon-left side-menu-item" ng-click="logout()" ng-if="userData" menu-close>
+                    <i class="icon ion-log-out"></i> Logout
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+    <!-- <h2 translate="TITLE">Hello</h2>
+        <h1>{{"TITLE" | translate}}</h1> -->
+    <!-- <ion-side-menu side="right">
+        <ion-header-bar class="bar-assertive" align-title="center">
+            <h1 class="title">Change Language</h1>
+        </ion-header-bar>
+        <ion-content>
+            <div class="list card">
+                <a ng-click="ChangeLanguage('en')" class="item" menu-close>
+                    English
+                </a>
+                <a ng-click="ChangeLanguage('hi')" class="item" menu-close>
+                    Hindi
+                </a>
+            </div>
+        </ion-content>
+    </ion-side-menu> -->
+</ion-side-menus>

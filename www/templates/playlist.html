@@ -1,0 +1,10 @@
+<ion-view view-title="{{ playlist.title[lang] }}">
+    <ion-content>
+        <div class="single-box"></div>
+        <div class="list list-inset subcat-list">
+            <ion-item ng-repeat="cat in playlist.subcat" href="#/app/playlists/{{playlist.id}}/{{cat}}">
+                {{cat}}
+            </ion-item>
+        </div>
+    </ion-content>
+</ion-view>

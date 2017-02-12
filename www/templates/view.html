@@ -1,0 +1,14 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-assertive" align-title="center">
+        <h1 class="title">{{ "LABEL_MANUAL_INSTALLATION" | translate }}</h1>
+        <button class="button button-clear button-primary" ng-click="closeManualInstallationModal()">Close</button>
+    </ion-header-bar>
+    <ion-content>
+        <button ng-click="prevPage()">&lt;</button>
+        <button ng-click="nextPage()">&gt;</button>
+        <br>
+        <span>{{currentPage}}/{{totalPages}}</span>
+        <br>
+        <pdfviewer src="pdfs/test.pdf" on-page-load='pageLoaded(page,total)' id="viewer"></pdfviewer>
+    </ion-content>
+</ion-modal-view>

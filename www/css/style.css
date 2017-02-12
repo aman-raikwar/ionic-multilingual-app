@@ -1,0 +1,255 @@
+body {
+    cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.slider {
+    height: 100%;
+}
+
+.slider-slide {
+    padding-top: 80px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+#logo {
+    margin: 30px 0px;
+}
+
+#list {
+    width: 170px;
+    margin: 30px auto;
+    font-size: 20px;
+}
+
+#list ol {
+    margin-top: 30px;
+}
+
+#list ol li {
+    text-align: left;
+    list-style: decimal;
+    margin: 10px 0px;
+}
+
+.button.ng-hide {
+    display: none;
+}
+
+ion-slides {
+    height: 150px;
+}
+
+.box {
+    height: 100%;
+}
+
+.box.box-1 {
+    background-image: url("../img/hotel1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.box.box-2 {
+    background-image: url("../img/hotel2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.box.box-3 {
+    background-image: url("../img/hotel3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.list.list-inset.search-bar {
+    margin: 10px;
+}
+
+.bar.bar-assertive {
+    /*background: #7F8C8D;*/
+    border-color: transparent;
+    background: -webkit-linear-gradient(left top, #C21E2E, orange);
+    background: -m-linear-gradient(bottom right, #C21E2E, orange);
+    background: -moz-linear-gradient(bottom right, #C21E2E, orange);
+    background: linear-gradient(10, bottom right, #C21E2E, orange);
+}
+
+.popover {
+    width: 100px;
+    height: 70px;
+}
+
+.popover .scroll-content {
+    min-height: 65px;
+}
+
+.language-list .item {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.single-box {
+    height: 150px;
+    background-image: url(../img/hotel2.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid red;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item-stacked-label {
+    border: none;
+    padding-right: 16px;
+}
+
+.subcat-list ion-item.item {
+    padding: 10px;
+    text-align: center;
+    border: none;
+    font-weight: 400;
+}
+
+.subcat-list ion-item.item a {
+    padding: 0px;
+}
+
+h2.single-subtitle {
+    text-align: center;
+    color: teal;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.other-info {
+    margin-top: 60px;
+}
+
+.other-info ion-item.item {
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Copied from some other project */
+
+.side-menu-item {
+    background: none;
+    color: #fff;
+    font-weight: 300;
+    border: 0px;
+}
+
+.side-menu-item .item-content {
+    background: none;
+}
+
+.side-menu-item .item-content.activated {
+    background: #04395D;
+}
+
+.side-menu-gradient,
+.btn {
+    background: -webkit-linear-gradient(left top, #C21E2E, orange);
+    background: -m-linear-gradient(bottom right, #C21E2E, orange);
+    background: -moz-linear-gradient(bottom right, #C21E2E, orange);
+    background: linear-gradient(10, bottom right, #C21E2E, orange);
+}
+
+.profile-image img {
+    /*border-radius: 50%;*/
+    /*margin: 10px;*/
+    /*border: 2px solid #04395D;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    height: 140px;
+    width: 100%;
+}
+
+.container-bg {
+    background: url(../img/container-bg.png) center no-repeat;
+    background-size: cover
+}
+
+.login-signup-bg {
+    background: url(../img/login-signup-bg.jpg) center no-repeat;
+    background-size: cover
+}
+
+.footer-bar-custom .item-left,
+.footer-bar-custom .item-center,
+.footer-bar-custom .item-right {
+    position: absolute;
+    width: 30px
+}
+
+.footer-bar-custom .item-left {
+    left: 10px
+}
+
+.footer-bar-custom .item-right {
+    right: 10px
+}
+
+.button .icon:before,
+.button.icon:before,
+.button.icon-left:before,
+.button.icon-right:before {
+    line-height: 30px;
+}
+
+.item.active,
+.item.activated,
+.item-complex.active .item-content,
+.item-complex.activated .item-content,
+.item .item-content.active,
+.item .item-content.activated {
+    background: none;
+    border-color: #04395D;
+}
+
+.item-divider {
+    background: #C21E2E;
+    color: #fff;
+    min-height: 10px;
+}
+
+.button.button-assertive {
+    background: #C21E2E;
+}
+
+.button.button-positive {
+    background: #04395D;
+    line-height: inherit;
+}
+
+.popup-body {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+form#login-form1,
+form#signup-form2 {
+    max-width: 360px;
+    margin: 0 auto;
+}
